@@ -9,7 +9,8 @@
         "guzzlehttp/guzzle": "^7.2",
         "laravel/framework": "^9.2",
         "laravel/sanctum": "^2.14.1",
-        "laravel/tinker": "^2.7"
+        "laravel/tinker": "^2.7",
+        "realrashid/sweet-alert": "^5.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",
@@ -18,13 +19,18 @@
         "mockery/mockery": "^1.4.4",
         "nunomaduro/collision": "^6.1",
         "phpunit/phpunit": "^9.5.10",
-        "spatie/laravel-ignition": "^1.0"
+        "spatie/laravel-ignition": "^1.0",
+        "yajra/laravel-datatables-oracle": "^9.18",
+        "intervention/image": "^2.5"
+
     },
     "autoload": {
         "exclude-from-classmap": [
+            "vendor/yajra/laravel-datatables-oracle/src/QueryDataTable.php",
             "vendor/laravel/framework/src/Illuminate/Auth/Notifications/VerifyEmail.php"
         ],
         "files": [
+            "app/Overrides/Yajra/QueryDataTable.php",
             "app/Overrides/Auth/Notifications/VerifyEmail.php"
         ],
         "psr-4": {

@@ -5,6 +5,8 @@
 <script src="{{asset("assets/plugins/simplebar/js/simplebar.min.js")}}"></script>
 <script src="{{asset("assets/plugins/metismenu/js/metisMenu.min.js")}}"></script>
 <script src="{{asset("assets/plugins/perfect-scrollbar/js/perfect-scrollbar.js")}}"></script>
+@include('sweetalert::alert')
+
 <!--Password show & hide js -->
 <script>
     $(document).ready(function () {
