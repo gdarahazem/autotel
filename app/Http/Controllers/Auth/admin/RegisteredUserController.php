@@ -13,18 +13,10 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use Illuminate\Validation\ValidationException;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class RegisteredUserController extends Controller
 {
-    /**
-     * Display the registration view.
-     *
-     * @return \Illuminate\View\View
-     */
-    public function create()
-    {
-        return view('auth.register', ['url' => 'admin']);
-    }
 
     /**
      * Handle an incoming registration request.
@@ -49,7 +41,8 @@ class RegisteredUserController extends Controller
         ]);
         $user->sendEmailVerificationNotification();
         event(new Registered($user));
-//        Auth::login($user);
-        return redirect(RouteServiceProvider::ADMIN_HOME);
+        Alert::success('Success', "Utilisateur a été ajouter avec succès !")->persistent("Close");
+
+        return redirect()->back();
     }
 }

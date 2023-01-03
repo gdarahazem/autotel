@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Acceuil",
+        "url": "home.index",
+        "icon": "fas fa-tachometer-alt",
+        "sousmenu": []
+    },
+    {
+        "name": "Publication Achteur",
+        "url": "phone.buyer.index",
+        "icon": "fas fa-tachometer-alt",
+        "sousmenu": []
+    },
+    {
+        "name": "me publications",
+        "url": "myposts.index",
+        "icon": "fas fa-tachometer-alt",
+        "sousmenu": []
+    },
+    {
+        "name": "Estimation de prix",
+        "url": "estimate.price.index",
+        "icon": "fas fa-hand-holding-usd",
+        "sousmenu": []
+    },
+    {
+        "name": "Budget",
+        "url": "budget.index",
+        "icon": "fas fa-dollar-sign",
+        "sousmenu": []
+    }
+]

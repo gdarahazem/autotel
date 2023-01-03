@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Dashboard",
+        "url": "admin.dashboard",
+        "icon": "fas fa-tachometer-alt",
+        "sousmenu": []
+    },
+    {
+        "name": "Acceuil",
+        "url": "admin.index.home",
+        "icon": "fas fa-tachometer-alt",
+        "sousmenu": []
+    },
+    {
+        "name": "Publication Acheteur",
+        "url": "admin.phone.buyer",
+        "icon": "fas fa-tachometer-alt",
+        "sousmenu": []
+    },
+    {
+        "name": "Marque",
+        "url": "mark.index",
+        "icon": "fas fa-users",
+        "sousmenu": []
+    }
+]

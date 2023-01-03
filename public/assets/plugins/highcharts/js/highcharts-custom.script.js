@@ -70,7 +70,7 @@ $(function () {
 	});
 	// chart 2
 	// Build the chart
-	Highcharts.chart('chart2', {
+	Highcharts.chart('charts1', {
 		chart: {
 			plotBackgroundColor: null,
 			plotBorderWidth: null,
